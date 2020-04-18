@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import '../../style.css';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
-import tvShowService from "../../services/tvShowService";
 import availableTvShows from "../../constants/tvShowsConstants"
 import { shuffleAndGo } from '../../helpers/randomEpisodeHelper';
 import { Icon, Button } from '@material-ui/core';
@@ -11,8 +10,6 @@ const SearchBar = ({ }) => {
     const [selectedShow, setSelectedShow] = useState(null)
 
     const goToRandomEpisode = () => shuffleAndGo(selectedShow);
-
-    // getJson();
 
     return <div className="search-bar">
         <Autocomplete

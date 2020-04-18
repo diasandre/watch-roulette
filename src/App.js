@@ -1,7 +1,6 @@
 import React from 'react';
 import './style.css';
 import SearchBar from './components/SearchBar';
-import TvShowList from './components/TvShowList';
 import Typography from '@material-ui/core/Typography';
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
           random episodes from your favorite series
         </Typography>
         <SearchBar />
-        <TvShowList />
       </header>
     </div>
   );
