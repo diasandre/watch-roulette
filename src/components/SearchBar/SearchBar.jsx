@@ -1,34 +1,36 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import '../../style.css';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import tvShowService from "../../services/tvShowService";
+import availableTvShows from "../../constants/tvShowsConstants"
+import { shuffleAndGo } from '../../helpers/randomEpisodeHelper';
+import { Icon, Button } from '@material-ui/core';
 
 const SearchBar = ({ }) => {
-    const [popularShows, setPopularShows] = useState([]);
+    const [selectedShow, setSelectedShow] = useState(null)
 
-    const fetchData = async () => {
-        const { tv_shows } = await tvShowService.getPopularShows();
-        setPopularShows(tv_shows)
-    }
+    const goToRandomEpisode = () => shuffleAndGo(selectedShow);
 
-    const formatOption = option => {
-        return typeof option === "string" ? option : option.name;
-    }
+    // getJson();
 
-    useEffect(() => {
-        fetchData();
-    }, [])
-
-    return <div style={{ width: 400, margin: "0 auto" }}>
+    return <div className="search-bar">
         <Autocomplete
-            freeSolo
-            options={popularShows}
-            getOptionLabel={formatOption}
-            onChange={(event, selectedOption) => console.log(selectedOption)}
+            options={availableTvShows}
+            getOptionLabel={option => option.name}
+            onChange={(event, selectedOption) => setSelectedShow(selectedOption)}
             renderInput={(params) => (
                 <TextField {...params} label="search" margin="normal" variant="outlined" />
             )}
         />
+        <Button
+            variant="contained"
+            color="primary"
+            endIcon={<Icon>send</Icon>}
+            disabled={selectedShow == null}
+            onClick={goToRandomEpisode}>
+            GO
+          </Button>
     </div>
 }
 
