@@ -6,7 +6,7 @@ import availableTvShows from "../../constants/tvShowsConstants"
 import { shuffleAndGo } from '../../helpers/randomEpisodeHelper';
 import { Icon, Button } from '@material-ui/core';
 
-const SearchBar = ({ }) => {
+const SearchBar = () => {
     const [selectedShow, setSelectedShow] = useState(null)
 
     const goToRandomEpisode = () => shuffleAndGo(selectedShow);
