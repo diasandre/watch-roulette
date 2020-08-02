@@ -2,7 +2,7 @@
 
 https://which-episode-to-watch-again.herokuapp.com/
 
-random episodes from your favorite series
+random episodes from your favorites tv shows
 
 available tv shows:
 - Friends
