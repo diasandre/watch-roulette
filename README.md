@@ -1,10 +1,12 @@
-## whichEpisodeToWatchAgain
+<img src="https://github.com/diasandre/which-episode-to-watch-again/blob/master/src/img/logo.png?raw=true"/>
 
-https://which-episode-to-watch-again.herokuapp.com/
+# whichEpisodeToWatchAgain
 
-random episodes from your favorites tv shows
+### random episodes from your favorites tv shows
 
-available tv shows:
+https://which-episode-to-watch-again.netlify.app/
+
+#### Available tv shows:
 - Friends
 - Greys Anatomy
 - Rick and Morty
