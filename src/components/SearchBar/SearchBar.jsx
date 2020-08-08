@@ -18,6 +18,9 @@ const SearchBar = () => {
   };
 
   useEffect(() => {
+    console.log("api USERNAME", process.env.API_USERNAME);
+    console.log("username", process.env.username);
+
     fetchTvShows();
   }, []);
 
