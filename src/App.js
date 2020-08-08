@@ -11,7 +11,7 @@ function App() {
           which episode to watch again
         </Typography>
         <Typography variant="subtitle2" color="textSecondary" align="center">
-          random episodes from your favorite series
+          random episodes from your favorite tv shows
         </Typography>
         <SearchBar />
       </header>

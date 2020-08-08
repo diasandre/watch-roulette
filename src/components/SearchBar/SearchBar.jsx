@@ -18,7 +18,6 @@ const SearchBar = () => {
   };
 
   useEffect(() => {
-    console.log("api USERNAME", process.env.REACT_APP_API_USERNAME);
     fetchTvShows();
   }, []);
 
