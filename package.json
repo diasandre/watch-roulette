@@ -2,9 +2,10 @@
   "name": "which-episode-to-watch-again",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://wetwa-api.herokuapp.com",
   "engines": {
     "npm": "6.14.4",
-    "node": "12.16.2"
+    "node": ">=12.16.2"
   },
   "dependencies": {
     "@material-ui/core": "^4.9.10",
@@ -13,16 +14,13 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
-    "chance": "^1.1.4",
-    "express": "^4.17.1",
-    "express-favicon": "^2.0.1",
     "path": "^0.12.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
