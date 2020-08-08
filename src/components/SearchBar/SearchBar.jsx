@@ -12,19 +12,13 @@ const SearchBar = () => {
 
   const goToRandomEpisode = () => shuffleAndGo(selectedShow);
 
-  console.log("api USERNAME 1", process.env.API_USERNAME);
-  console.log("URL 1", process.env.URL);
-
   const fetchTvShows = async () => {
     const { data } = await listAllTvShows();
     setTvShows(data);
   };
 
   useEffect(() => {
-    console.log("api USERNAME2", process.env.REACT_API_USERNAME);
-    console.log("URL2", process.env.URL);
-    console.log("username", process.env.username);
-
+    console.log("api USERNAME", process.env.REACT_APP_API_USERNAME);
     fetchTvShows();
   }, []);
 
