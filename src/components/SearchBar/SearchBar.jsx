@@ -21,7 +21,7 @@ const SearchBar = () => {
   };
 
   useEffect(() => {
-    console.log("api USERNAME2", process.env.API_USERNAME);
+    console.log("api USERNAME2", process.env.REACT_API_USERNAME);
     console.log("URL2", process.env.URL);
     console.log("username", process.env.username);
 
