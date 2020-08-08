@@ -8,6 +8,6 @@ const AUTH = {
   },
 };
 
-export const listAllTvShows = () => axios.get(`${TV_SHOWS.BASE_URL}`, AUTH);
+export const listAllTvShows = () => axios.get(`https://wetwa-api.herokuapp.com${TV_SHOWS.BASE_URL}`, AUTH);
 
-export const getRandom = (id) => axios.get(`${RANDOM.BASE_URL}/${id}`, AUTH);
+export const getRandom = (id) => axios.get(`https://wetwa-api.herokuapp.com${RANDOM.BASE_URL}/${id}`, AUTH);
