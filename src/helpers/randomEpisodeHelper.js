@@ -1,18 +1,17 @@
-import database from "../constants/data"
-import Chance from "chance";
+import { getRandom } from "../services/apiService";
 
-const goToUrl = url => {
-    window.open(url, "_blank");
-}
+const goToUrl = (url) => {
+  window.open(url, "_blank");
+};
 
-const mountUrl = (episode) => {
-    return `https://www.netflix.com/watch/${episode.id}`;
-}
+const mountUrl = (episodeId) => {
+  return `https://www.netflix.com/watch/${episodeId}`;
+};
 
-export const shuffleAndGo = (tvShow) => {
-    const episodes = database[tvShow.idName]
-    const randomEpisodeNumber = Chance().integer({ min: 1, max: episodes.length })
-    const episodeInfo = episodes[randomEpisodeNumber];
-    const url = mountUrl(episodeInfo);
-    goToUrl(url);
-}
+export const shuffleAndGo = async ({ id }) => {
+  const {
+    data: { id: episodeId },
+  } = await getRandom(id);
+  const url = mountUrl(episodeId);
+  goToUrl(url);
+};
