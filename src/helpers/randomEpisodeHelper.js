@@ -10,8 +10,9 @@ const mountUrl = (episodeId) => {
 
 export const shuffleAndGo = async ({ id }) => {
   const {
-    data: { id: episodeId },
+    data,
   } = await getRandom(id);
+  const { id: episodeId } = data[0];
   const url = mountUrl(episodeId);
   goToUrl(url);
 };
