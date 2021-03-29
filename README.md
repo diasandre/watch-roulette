@@ -10,8 +10,7 @@
 https://which-episode-to-watch-again.netlify.app/
 
 #### Available tv shows:
-- Friends
 - Greys Anatomy
 - Rick and Morty
-
-
+- Modern Family
+- B99
