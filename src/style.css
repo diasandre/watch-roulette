@@ -12,7 +12,8 @@ body {
 }
 
 h4 {
-  letter-spacing: -2.5px !important;
+  letter-spacing: -2px !important;
+  font-weight: 800 !important; 
 }
 
 footer {
