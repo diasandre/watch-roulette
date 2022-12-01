@@ -14,3 +14,5 @@ https://which-episode-to-watch-again.netlify.app/
 - Rick and Morty
 - Modern Family
 - B99
+
+ps: wait some seconds after first request because heroku is deploying backend
