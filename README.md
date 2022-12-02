@@ -10,9 +10,15 @@
 https://which-episode-to-watch-again.netlify.app/
 
 #### Available tv shows:
-- Greys Anatomy
-- Rick and Morty
-- Modern Family
 - B99
+- Lovesick
+- Greys Anatomy (REMOVED FROM NETFLIX)
+- Rick and Morty (REMOVED FROM NETFLIX)
+- Modern Family (REMOVED FROM NETFLIX)
+
+#### Upcoming tv shows:
+- The office (prime video)
+- House (prime video)
+- How i met your mother (prime video)
 
 ps: wait some seconds after first request because heroku is deploying backend
