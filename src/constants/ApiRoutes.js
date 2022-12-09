@@ -1,5 +1,5 @@
 export const TV_SHOWS = {
-    BASE_URL: "/tv-shows/"
+    BASE_URL: "/tv-shows"
 }
 
 export const RANDOM = {
