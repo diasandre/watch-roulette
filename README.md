@@ -20,5 +20,3 @@ https://which-episode-to-watch-again.netlify.app/
 - The office (prime video)
 - House (prime video)
 - How i met your mother (prime video)
-
-ps: wait some seconds after first request because heroku is deploying backend
