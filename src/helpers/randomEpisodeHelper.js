@@ -4,8 +4,15 @@ const goToUrl = (url) => {
   window.open(url, "_blank");
 };
 
-const mountUrl = (episodeId) => {
-  return `https://www.netflix.com/watch/${episodeId}`;
+const mountUrl = (type, episodeId) => {
+  if(type === 'NETFLIX') {
+    return `https://www.netflix.com/watch/${episodeId}`;
+  }
+
+  if(type === 'PRIME') {
+    return `https://www.primevideo.com/region/na/detail/${episodeId}/?autoplay=1&t=0`;
+  }
+
 };
 
 export const shuffleAndGo = async ({ id }) => {

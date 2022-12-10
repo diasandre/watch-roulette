@@ -27,6 +27,7 @@ const SearchBar = () => {
         options={tvShows}
         getOptionLabel={(option) => option.title}
         onChange={(event, selectedOption) => setSelectedShow(selectedOption)}
+        filterOptions={(options) => option.enable}
         renderInput={(params) => (
           <TextField
             {...params}
