@@ -14,7 +14,7 @@ const SearchBar = () => {
 
   const fetchTvShows = async () => {
     const { data } = await listAllTvShows();
-    setTvShows(data);
+    setTvShows(data.filter(item => item.enable));
   };
 
   useEffect(() => {
@@ -27,7 +27,6 @@ const SearchBar = () => {
         options={tvShows}
         getOptionLabel={(option) => option.title}
         onChange={(event, selectedOption) => setSelectedShow(selectedOption)}
-        filterOptions={(options) => option.enable}
         renderInput={(params) => (
           <TextField
             {...params}
