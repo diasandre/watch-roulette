@@ -15,11 +15,11 @@ const mountUrl = (type, episodeId) => {
 
 };
 
-export const shuffleAndGo = async ({ id }) => {
+export const shuffleAndGo = async ({ id, type }) => {
   const {
     data,
   } = await getRandom(id);
   const { id: episodeId } = data[0];
-  const url = mountUrl(episodeId);
+  const url = mountUrl(type, episodeId);
   goToUrl(url);
-};
+};F
