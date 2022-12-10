@@ -22,4 +22,4 @@ export const shuffleAndGo = async ({ id, type }) => {
   const { id: episodeId } = data[0];
   const url = mountUrl(type, episodeId);
   goToUrl(url);
-};F
+};
