@@ -13,7 +13,7 @@ function App() {
           <img src={logo} width="200" alt="logo" />
           <header>
             <Typography variant="h4" color="textPrimary" align="center">
-              which episode to watch again
+              WATCH ROULETTE
             </Typography>
             <Typography
               variant="subtitle2"
